@@ -204,7 +204,9 @@ section {
 
 
 /* about section  */
-
+.fw-700{
+    font-weight: 700 !important;
+}
 
 
 /* industry we serve section  */
