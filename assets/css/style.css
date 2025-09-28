@@ -304,6 +304,32 @@ section {
 }
 
 
+/* ================== Testimonials Section ================== */
+.testimonials-section {
+  position: relative;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.testimonial-card h5 {
+  color: var(--secondary-color);
+}
+
+
 /* ====== why chose us section ====== */
 .choose-us-section {
     background: linear-gradient(

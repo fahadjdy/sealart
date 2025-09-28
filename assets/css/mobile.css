@@ -40,4 +40,10 @@
       padding: 10px 0;
     }
 
+    .testimonial-card {
+    padding: 1.5rem;
+  }
+  .testimonial-card p {
+    font-size: 0.95rem;
+  }
 }
