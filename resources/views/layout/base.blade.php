@@ -49,10 +49,12 @@
 </head>
 <body>
     @if(session('success'))
-        <div class="alert alert-success">
+        <div class="alert alert-success alert-dismissible fade show custom-alert" role="alert">
             {{ session('success') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     @endif
+
     
     @include('layout.header')
     <main style="padding-top: 80px;">
@@ -122,6 +124,19 @@
                     window.scrollTo({ top: y, behavior: 'smooth' });
                 }
             });
+        });
+
+
+        // auto hide alert
+        window.addEventListener('DOMContentLoaded', () => {
+            const alert = document.querySelector('.custom-alert');
+            if(alert){
+                setTimeout(() => {
+                    // Fade out
+                    alert.classList.remove('show');
+                    alert.classList.add('hide');
+                }, 5000); // 5 seconds
+            }
         });
 
     </script>
