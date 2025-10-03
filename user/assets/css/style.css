@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #3498db;
+    --primary-color: #006085;
     --secondary-color: #2c3e50;
     --accent-color: #e74c3c;
     --light-color: #f8f9fa;
@@ -327,6 +327,15 @@ section {
 
 .testimonial-card h5 {
   color: var(--secondary-color);
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%; /* makes it circular */
+  border: 3px solid var(--primary-color); /* optional colored border */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 
