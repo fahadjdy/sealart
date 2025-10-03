@@ -7,6 +7,10 @@
     --bs-body-font-family: 'Poppins', sans-serif;
 }
 
+.text-gray{
+    color: #555 !important;
+}
+
 * {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     scroll-behavior: smooth;

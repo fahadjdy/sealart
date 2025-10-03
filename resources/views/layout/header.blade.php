@@ -1,7 +1,7 @@
  <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="{{ asset('storage/' . $profile->logo) }}" alt="Logo" height="40">
                 </a>
 

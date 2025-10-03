@@ -116,9 +116,13 @@
                                             {{ $product->name }}
                                         </a>
                                     </h5>
-                                    <p class="card-text flex-grow-1">
-                                        {{ Str::limit($product->description, 120) }}
+                                    <p class="text-primary">
+                                        {{ $product->category->name }}
                                     </p>
+                                   <p class="card-text flex-grow-1 text-gray">
+                                        {{ Str::limit(strip_tags($product->description), 120) }}
+                                    </p>
+
                                     <div class="d-flex justify-content-between align-items-center mt-3">
                                         <a href="tel:+917203070468" class="btn btn-primary">
                                             <i class="fa-solid fa-phone me-2"></i> Call Now
